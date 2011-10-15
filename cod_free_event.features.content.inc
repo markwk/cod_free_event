@@ -6,12 +6,140 @@
 function cod_free_event_content_default_fields() {
   $fields = array();
 
+  // Exported field: field_dates
+  $fields['free_event-field_dates'] = array(
+    'field_name' => 'field_dates',
+    'type_name' => 'free_event',
+    'display_settings' => array(
+      'weight' => '-2',
+      'parent' => '',
+      'label' => array(
+        'format' => 'inline',
+      ),
+      'teaser' => array(
+        'format' => 'long',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'long',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'date',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'date',
+    'active' => '1',
+    'granularity' => array(
+      'year' => 'year',
+      'month' => 'month',
+      'day' => 'day',
+      'hour' => 'hour',
+      'minute' => 'minute',
+    ),
+    'timezone_db' => 'UTC',
+    'tz_handling' => 'site',
+    'todate' => 'optional',
+    'repeat' => 0,
+    'repeat_collapsed' => '',
+    'default_format' => 'medium',
+    'widget' => array(
+      'default_value' => 'blank',
+      'default_value_code' => '',
+      'default_value2' => 'same',
+      'default_value_code2' => '',
+      'input_format' => 'm/d/Y - g:ia',
+      'input_format_custom' => '',
+      'increment' => '1',
+      'text_parts' => array(),
+      'year_range' => '-3:+3',
+      'label_position' => 'above',
+      'label' => 'Dates',
+      'weight' => '-2',
+      'description' => '',
+      'type' => 'date_popup',
+      'module' => 'date',
+    ),
+  );
+
+  // Exported field: field_event_cost
+  $fields['free_event-field_event_cost'] = array(
+    'field_name' => 'field_event_cost',
+    'type_name' => 'free_event',
+    'display_settings' => array(
+      'weight' => 0,
+      'parent' => '',
+      'label' => array(
+        'format' => 'inline',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '$15 (meal cost)',
+          '_error_element' => 'default_value_widget][field_event_cost][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Cost',
+      'weight' => 0,
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
   // Exported field: field_images
   $fields['free_event-field_images'] = array(
     'field_name' => 'field_images',
     'type_name' => 'free_event',
     'display_settings' => array(
-      'weight' => '-2',
+      'weight' => '3',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -84,7 +212,7 @@ function cod_free_event_content_default_fields() {
       'insert_class' => '',
       'insert_width' => '',
       'label' => 'Images',
-      'weight' => '-1',
+      'weight' => '3',
       'description' => '',
       'type' => 'imagefield_widget',
       'module' => 'imagefield',
@@ -96,9 +224,10 @@ function cod_free_event_content_default_fields() {
     'field_name' => 'field_place_ref',
     'type_name' => 'free_event',
     'display_settings' => array(
+      'weight' => '-1',
+      'parent' => '',
       'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
+        'format' => 'inline',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -152,10 +281,136 @@ function cod_free_event_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Place',
-      'weight' => '9',
+      'weight' => '-1',
       'description' => '',
       'type' => 'nodereference_buttons',
       'module' => 'nodereference',
+    ),
+  );
+
+  // Exported field: field_presenter
+  $fields['free_event-field_presenter'] = array(
+    'field_name' => 'field_presenter',
+    'type_name' => 'free_event',
+    'display_settings' => array(
+      'weight' => '-4',
+      'parent' => '',
+      'label' => array(
+        'format' => 'inline',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_presenter][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Presenter(s)',
+      'weight' => '-4',
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_presenter_co
+  $fields['free_event-field_presenter_co'] = array(
+    'field_name' => 'field_presenter_co',
+    'type_name' => 'free_event',
+    'display_settings' => array(
+      'weight' => '-3',
+      'parent' => '',
+      'label' => array(
+        'format' => 'inline',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_presenter_co][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Presenter\'s Company',
+      'weight' => '-3',
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
     ),
   );
 
@@ -164,10 +419,10 @@ function cod_free_event_content_default_fields() {
     'field_name' => 'field_related_attendees',
     'type_name' => 'free_event',
     'display_settings' => array(
-      'weight' => '-1',
+      'weight' => '4',
       'parent' => '',
       'label' => array(
-        'format' => 'above',
+        'format' => 'inline',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -214,19 +469,19 @@ function cod_free_event_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Related Attendees',
-      'weight' => '11',
+      'weight' => '4',
       'description' => '',
       'type' => 'userreference_autocomplete',
       'module' => 'userreference',
     ),
   );
 
-  // Exported field: field_slot_datetime
-  $fields['free_event-field_slot_datetime'] = array(
-    'field_name' => 'field_slot_datetime',
+  // Exported field: field_rsvp_contact
+  $fields['free_event-field_rsvp_contact'] = array(
+    'field_name' => 'field_rsvp_contact',
     'type_name' => 'free_event',
     'display_settings' => array(
-      'weight' => '-1',
+      'weight' => '1',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -257,48 +512,50 @@ function cod_free_event_content_default_fields() {
       ),
     ),
     'widget_active' => '1',
-    'type' => 'datetime',
+    'type' => 'link',
     'required' => '1',
     'multiple' => '0',
-    'module' => 'date',
+    'module' => 'link',
     'active' => '1',
-    'granularity' => array(
-      'year' => 'year',
-      'month' => 'month',
-      'day' => 'day',
-      'hour' => 'hour',
-      'minute' => 'minute',
+    'attributes' => array(
+      'target' => 'default',
+      'rel' => '',
+      'class' => '',
+      'title' => '',
     ),
-    'timezone_db' => 'UTC',
-    'tz_handling' => 'site',
-    'todate' => 'required',
-    'repeat' => 0,
-    'repeat_collapsed' => '',
-    'default_format' => 'medium',
+    'display' => array(
+      'url_cutoff' => '80',
+    ),
+    'url' => 0,
+    'title' => 'optional',
+    'title_value' => '',
+    'enable_tokens' => 0,
+    'validate_url' => 1,
     'widget' => array(
-      'default_value' => 'blank',
-      'default_value_code' => '',
-      'default_value2' => 'blank',
-      'default_value_code2' => '',
-      'input_format' => 'm/d/Y - H:i',
-      'input_format_custom' => '',
-      'increment' => '1',
-      'text_parts' => array(),
-      'year_range' => '-3:+3',
-      'label_position' => 'above',
-      'label' => 'Date and time',
-      'weight' => '-3',
+      'default_value' => array(
+        '0' => array(
+          'title' => 'Contact Troy Brand with Your Reservation',
+          'url' => 'email/13/field_email',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'RSVP by Email',
+      'weight' => '1',
       'description' => '',
-      'type' => 'date_popup',
-      'module' => 'date',
+      'type' => 'link',
+      'module' => 'link',
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Date and time');
+  t('Cost');
+  t('Dates');
   t('Images');
   t('Place');
+  t('Presenter\'s Company');
+  t('Presenter(s)');
+  t('RSVP by Email');
   t('Related Attendees');
 
   return $fields;

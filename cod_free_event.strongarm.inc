@@ -75,16 +75,14 @@ function cod_free_event_strongarm() {
   $strongarm->name = 'content_extra_weights_free_event';
   $strongarm->value = array(
     'title' => '-5',
-    'body_field' => '-2',
-    'revision_information' => '3',
-    'author' => '4',
-    'options' => '5',
-    'comment_settings' => '8',
-    'menu' => '2',
-    'path' => '7',
-    'path_redirect' => '6',
-    'signup_node_info' => '0',
-    'signup_node_list' => '1',
+    'body_field' => '2',
+    'revision_information' => '6',
+    'author' => '7',
+    'options' => '8',
+    'comment_settings' => '11',
+    'menu' => '5',
+    'path' => '10',
+    'path_redirect' => '9',
   );
   $export['content_extra_weights_free_event'] = $strongarm;
 
@@ -116,7 +114,7 @@ function cod_free_event_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'signup_date_field_free_event';
-  $strongarm->value = 'field_slot_datetime';
+  $strongarm->value = 'field_dates';
   $export['signup_date_field_free_event'] = $strongarm;
 
   return $export;
